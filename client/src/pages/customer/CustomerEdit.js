@@ -21,7 +21,7 @@ function CustomerEdit(props) {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/api/customer/loginCustomerInfo`, {
+        axios.get(`/api/customer/loginCustomerInfo`, {
             headers: {
                 Authorization: `Bearer ${props.customer.customerToken}`
             }
